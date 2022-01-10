@@ -22,6 +22,7 @@ a{
   justify-content: center;
   list-style: none;
   padding: 10px; 
+  border: 10px darkred;
   background-color: rgb(51, 204, 255);
 }
 
@@ -76,4 +77,5 @@ div.rodape, footer{
         color: black;
         text-align: left;
         padding: 1px;
+        border: 2px solid black;
 }
