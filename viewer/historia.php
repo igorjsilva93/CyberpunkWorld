@@ -1,30 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <div class="cabecalho">
-        <title>Cyberpunk World</title>
-        <link rel="stylesheet" href="style.css">
-    </div>
-</head>
-<body>
-<div class="logo">
-    <center><img src="imgs/logo.png"/></center>
-  </div>
-  <div class="navegacao">
-  <nav>
-    <a href="index.html">Home</a> |
-    <a href="sobre.html">About</a> |
-    <a href="historia.html">Storyline (CP2077)</a> |
-    <a href="rpg.html">RPG</a> |
-    <a href="movies.html">Movies</a> |
-    <a href="books.html">Books</a> |
-    <a href="games.html">Games</a> |
-    <a href="shop.html">Shop</a>
-</nav>
-</div>
-
-
-<div class="pagina">
+<?php
+require '../helpers/conexao.php';
+include '../includes/Header.php';
+?>
     <center><h1>Cyberpunk 2077</h1></center>
     <h1>Timeline overview</h1>
 <p>The timeline of the Cyberpunk series diverges dramatically from our own around roughly the 1990s—although other divergences do occur well before then, albeit smaller in size and scope—where the fall of the Soviet Union at the end of the Cold War leads to a dissemination of nuclear weapons on the black market. Coupled with a US government "deep state" called the Gang of Four, the world soon finds itself in the midst of an economic crisis and the Collapse. Proxy wars, trade wars, and a resurgent Europe butt against the prevailing US world order. Eventually, brief nuclear exchanges and biological warfare around the globe cause the gradual decline of Western civilization. Societies collapse and many governments either dissolve or are reduced to reactionary, petty authoritarian states.
@@ -608,12 +585,7 @@ Lawlessness, chaos and technology. This is the world of Cyberpunk.
         <ul><li>Leading AI analytics predicts, with 74% confidence, that a second hot war between the New United States and the Free States will occur by this year.</li></ul>
         </ul>
 
-<hr></hr>
-<div class="rodape"><footer>
-    <p><b>Author:</b> Mike Pondsmith, CDPROJEKT, Igor Silva, Henrique Fernandes<br><br>
-    <b>Email:</b><a href="dprojekt@cdprojekt.com">cdprojekt@cdprojekt.com</a></p>
-
-</footer>
-</div>
-</body>
-</html>
+<!--<hr>-->
+<?php
+include '../includes/Footer.php';
+?>
