@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 14-Jan-2022 às 11:06
+-- Tempo de geração: 24-Jan-2022 às 09:37
 -- Versão do servidor: 10.4.22-MariaDB
 -- versão do PHP: 8.0.13
 
@@ -161,6 +161,28 @@ INSERT INTO `movies` (`id`, `cover`, `name`, `year`, `synopse`) VALUES
 (40, '../imgs/Upgrade.jpg', 'Upgrade', 2018, 'AFrantic pacing combined with plenty of cool action sequences, Upgrade has plenty to offer to the cyberpunk genre. Like Ex Machina and Looper, the low-life cyberpunk elements are in the background, focusing on the more on the high-tech premise, but they are definitely there. Id like to see another story told in this universe.\r\nIn the near future, technology controls almost every aspect of life. But when Gray, a technophobe, has his world turned upside down, his only hope for revenge is an experimental computer chip implant called Stem.'),
 (41, '../imgs/Alita.jpg', 'Alita: Battle Angel', 2019, 'This movie, based on the comic book series, Battle Angel Alita, is a spectacular to behold. It practically nonstop action from start to finish and filled with enough violence to satisfy a Tarantino fan, which is impressive given its PG-13 rating. Although it would have been nice to get a little more character development, the world-building is excellent and made me want more.\r\nAbandoned in an Iron City junkyard, cyborg Alita is found by scientist Dyson Ido. Revitalized, she wakes up with no memory and recognition of the world she finds herself in. Determined to know her past and explore her amazing fighting skills, Alita becomes a powerful bounty hunter, battling deadly forces.');
 
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `purchases`
+--
+
+CREATE TABLE `purchases` (
+  `id` int(11) NOT NULL,
+  `cover` varchar(200) NOT NULL,
+  `name` varchar(900) NOT NULL,
+  `price` varchar(200) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Extraindo dados da tabela `purchases`
+--
+
+INSERT INTO `purchases` (`id`, `cover`, `name`, `price`) VALUES
+(14, '../imgs/SHADOWRUN DRAGONFALL.jpg', 'SHADOWRUN DRAGONFALL', '14.99'),
+(15, '../imgs/FAR CRY 3BLOOD DRAGON.jpg', 'FAR CRY 3: BLOOD DRAGON', '14.99'),
+(16, '../imgs/DEUS EX.jpg', 'DEUS EX', '6.99');
+
 --
 -- Índices para tabelas despejadas
 --
@@ -190,6 +212,12 @@ ALTER TABLE `movies`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Índices para tabela `purchases`
+--
+ALTER TABLE `purchases`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT de tabelas despejadas
 --
 
@@ -216,6 +244,12 @@ ALTER TABLE `itens`
 --
 ALTER TABLE `movies`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=42;
+
+--
+-- AUTO_INCREMENT de tabela `purchases`
+--
+ALTER TABLE `purchases`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

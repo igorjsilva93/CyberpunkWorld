@@ -15,12 +15,12 @@
     <nav>
         <a href="index.php">Home</a> |
         <a href="sobre.php">About</a> |
-        <a href="historia.php">Storyline (CP2077)</a> |
         <a href="rpg.php">RPG</a> |
         <a href="movies.php">Movies</a> |
         <a href="books.php">Books</a> |
         <a href="games.php">Games</a> |
-        <a href="shop.php">Shop</a>
+        <a href="shop.php">Shop</a> |
+        <a href="carrinho.php">🛒</a>
     </nav>
 </div>
 
